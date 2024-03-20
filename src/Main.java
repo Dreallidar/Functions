@@ -13,10 +13,10 @@ public class Main {
         System.out.println("~~~Task 3~~~~~~~");
         System.out.println(daugyba(15, 16));
         System.out.println("~~~~~~  Task 4~~~~~~");
-        int[] arr = {1, 5, 9, 6, 3, 5, 2};
+        int[] arr = {1, 1, 1, 1, 1, 1, 1};
         printArr(arr);
         System.out.println("~~~~~~~ Task 5~~~~~~~~~");
-        System.out.println(rngInt(50,300));
+        System.out.println(rngInt(50, 300));
 
     }
 
@@ -46,12 +46,18 @@ public class Main {
     }
 
 
+    public static int rngInt(int min, int max) {
+        int generate = (int) (min + (Math.random() * (max - min)));
+        return generate;
+    }
+    public static int[] rngArr (int min, int max,int length) {
+        printArr(); = rngInt(min, max))
+        ;
+
+        return 0;
 
 
-public static int rngInt(int min, int max) {
-    int generate = (int) (min + (Math.random() * (max - min)));
-    return generate;
-}
+    }
 
 
 }
