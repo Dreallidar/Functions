@@ -34,6 +34,9 @@ public class Main {
         spaceCounterInText(text);
         System.out.println("~~~~~~~~~~~~Task 11~~~~~~~");
         System.out.println(reverseString("Kur ejom mes su knysliuku, neklausinekit mus"));
+        System.out.println(reverseStringBetter("Kur ejom mes su knysliuku, neklausinekit mus"));;
+        System.out.println(reverseStringForward("Kur ejom mes su knysliuku, neklausinekit mus"));;
+
 
 
     }
@@ -125,6 +128,22 @@ public class Main {
 
     }
 
+    public static String reverseStringBetter(String input) {
+        String res = "";
+
+        for (int i = input.length() -1; i >= 0; i--) {
+            res += input.charAt(i);
+        }
+        return res;
+    }
+
+    public static String reverseStringForward(String input) {
+        String res = "";
+        for (int i = 0; i < input.length() ; i++) {
+            res = input.charAt(i) + res;
+        }
+        return res;
+    }
 
 
 
